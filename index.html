@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+</style>
+	
+	<meta http-equiv="Access-Control-Allow-Origin" content="*">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+	<script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+
+	<h1>Hola mundo</h1>
+
+	<input type="number" id="miId" placeholder="Id">
+	<input type="text" id="name" placeholder="Nombre">
+	<input type="number" id="price" placeholder="Precio">
+	<input type="text" id="description" placeholder="Descripción">
+
+
+	<button onclick="registro()">ok</button>
+
+	<button onclick="obtenerItems()">VER</button>
+	
+	<button onclick="actualizar()">Editar</button>
+
+	<div>
+
+		<table>
+			<tbody id="miResultado">
+
+			</tbody>
+		</table>
+		
+	</div>
+
+</body>
+</html>
